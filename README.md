@@ -4,4 +4,4 @@ A simple Win32 GUI program that draws growing rectangles on mouse clicks using l
 ```
 g++ pop.cpp -o pop -lgdi32 -mwindows
 ```
-[demo](!pop.gif)
+![demo](pop.gif)
