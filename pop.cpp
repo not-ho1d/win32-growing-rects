@@ -170,7 +170,7 @@ LRESULT CALLBACK handleEvents(HWND hwnd,UINT msg,WPARAM wParam,LPARAM lParam){
         case WM_TIMER:{
 
             Node *ptr = start;
-            while(ptr!=nullptr){
+            while(ptr != nullptr){
                 Shape &currentRect = ptr->rect;
                 currentRect.top-=2;
                 currentRect.left-=2;
@@ -187,6 +187,7 @@ LRESULT CALLBACK handleEvents(HWND hwnd,UINT msg,WPARAM wParam,LPARAM lParam){
                 ){
                     Node *temp = start;
                     start = start -> next;
+                    ptr = start;
                     print("removed rect");
                     delete temp;
                 }else{
